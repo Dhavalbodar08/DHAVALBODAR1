@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JAVA : replaceChild & removeChild</title>
+    </head>
+    <body>
+        
+        <ul id="list">
+            <li>Orange</li>
+            <li>Apple</li>
+            <li>Grapes</li>
+            <li>Banana</li>
+        </ul>
+        <script>
+        //   var newElement =document.createElement("li");
+        //   var newText =document.createTextNode("WOW new Text.");
+
+        //   newElement.appendChild(newText);
+
+          var target = document.getElementById("list");
+          var oldElement = target.children[0];
+
+          console.log(oldElement);
+          target.removeChild(oldElement);
+
+        </script>
+    </body>
+</html>

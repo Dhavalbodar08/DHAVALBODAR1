@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>JAVA : setInterval & clearInterval</title>
+    <style>
+        #test {
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JAVA Script : setInterval & clearInterval </h1>
+    <div id="test"></div>
+    <script>
+        var a = 0;
+        setInterval(anim, 100);
+
+        function Anim() {
+            a = a + 10;
+            if (a == 200) {
+                clearInterval(id);
+            } else {
+                var target = document.getElementById("test");
+                
+                target.style.width = a + 'px';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

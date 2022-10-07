@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Task_9</title>
+    <script>
+        var n = prompt("Enter Number");
+        var string = " " ;
+        for (var a = 1; a <= n; a++) {
+            for (var b = 0; b < a; b++) {
+                if (a == n) {
+                    string += "*";
+                }                
+                else {                    
+                    if (b == 0 || b == a - 1) {
+                            string += "*" ;
+                    }else {
+                            string += " ";
+                            
+                        }
+                }                
+            }
+        console.log( string += "\n" + "<br>");
+        }
+        console.log(string);
+        document.write(string );        
+    </script>
+</head>
+</html>

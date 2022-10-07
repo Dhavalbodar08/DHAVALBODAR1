@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>JAVA : Filter</title>
+        <script>
+            var ages =[10, 21, 16, 30];
+              document.write(ages + "<br><br>");
+
+            var b = ages.filter(checkAdult);
+              document.write(b + "<br><br>");
+                
+            function checkAdult (age) {
+                return age >= 18;
+            } 
+        </script>
+    </head>
+</html>

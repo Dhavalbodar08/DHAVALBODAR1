@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JAVA : Object</title>
+        <script>
+            var a = {
+                    fname :'Yahoo',
+                    lname : 'Baba',
+                    age   : 25,
+                    email : 'hello@yahoobaba.net',
+                    favMovie : ["Dhoom","Sholay","Hum"],
+                    living : {
+                        'city' : 'Chandigarh',
+                        'country' : 'India'
+                    },
+                    fullname : function(){
+                    return this.fname + " " + this.lname;
+                    },
+                    salary : function(){
+                        return 25000;
+                    }                
+            }
+            console.log(a); 
+            document.write(a.favMovie[1] + "<br>");
+
+        </script>
+    </head>
+</html>

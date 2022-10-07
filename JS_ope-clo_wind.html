@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>JAVA : Open & Close - Window</title>
+    </head>
+    <body>
+        <button onclick="openwindow()">Open Window</button>
+        <button onclick="closewindow()">Close Window</button>
+        <script>
+            var  myWindow;
+            function openwindow(){
+                myWindow = window.open("http://www.yahoobaba.net","","width=500px","height=300px");
+            }
+            function closewindow(){
+                myWindow.close();
+            }
+        </script>
+    </body>
+</html>

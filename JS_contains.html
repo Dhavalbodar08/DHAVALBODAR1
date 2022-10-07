@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>JAVA : Contains</title>
+    <style>
+        #test {
+            width: 500px;
+            height: 300px;
+            background: tan;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <h1>JAVA Script : Contains</h1>
+
+        <p class="xyz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quasi architecto maiore blanditiis
+        illum? Velit culpa facere recusandae. Asperiores illo harum et facere dolor explicabo tempora ab, expedita
+        consequatur!</p>
+
+        <p id="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quo est reprehenderit sdolorum
+        suscipit vel nemo, qui ipsam voluptates, facilis dolores blanditiis voluptatum quasi corporis fugiat
+        officiis cumque libero?</p>
+    </div>
+    <script>
+        var parentElement = document.getElementById("test");
+        var target = document.getElementById("abc");
+
+        var find = parentElement.contains(target);
+
+        console.log(find);
+
+
+        
+    
+
+    </script>
+
+</body>
+
+</html>

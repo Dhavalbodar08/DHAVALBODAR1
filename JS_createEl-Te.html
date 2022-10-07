@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>create Element & create TextNode</title>
+        <style>
+            h1{
+                color: blue;
+            }
+            #main{
+                width: 500px;
+                height: 300px;
+                background:tan;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+          <div id="main">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis quo quam ratione dolor nobis.      Fugit reprehenderit adipisci nisi, totam esse, blanditiis quod ratione tenetur maiores quo, amet a labore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magnam, fuga excepturi blanditiis nesciunt</p> 
+          </div>
+
+         
+        <script>
+          
+       
+          var target = document.getElementById("main");
+
+          var a  = "<h2>This is Heading</h2>";
+
+          target.insertAdjacentHTML("beforebegin",a);
+
+
+        </script>
+    </body>
+</html>

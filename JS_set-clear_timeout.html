@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>JAVA : setTimeout & clearTimeout</title>
+    <style>
+        #test {
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JAVA Script : setTimeout & clearTimeout </h1>
+    <div id="test"></div><br>
+    <button onclick ="stopAnimation()">Stop Animation</button>
+    <script>
+        var a = setTimeout(function(){
+            var target = document.getElementById("test");
+            target.style.width = "500px";
+          
+        }, 5000);
+
+        
+         function stopAnimation(){
+            clearTimeout(a);
+         } 
+    </script>
+</body>
+
+</html>

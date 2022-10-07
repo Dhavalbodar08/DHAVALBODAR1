@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>JAVA : move& By Window </title>
+    </head>
+    <body>
+        <button onclick="openWindow()">Open Window</button>
+        <button onclick="resizeWindow()">Resize Window</button>
+        <script>
+           var myWindow;   
+           function openWindow(){
+                myWindow = window.open("","","width=200px,height=200px,left=250px,top=30px");
+                myWindow.document.write("<p>This is my Window.</p>");
+            }
+            function resizeWindow(){
+                myWindow.resizeBy(300,300);
+                
+            }
+        </script>   
+    </body>
+</html>

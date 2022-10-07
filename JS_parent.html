@@ -1,0 +1,72 @@
+<html id="main">
+
+<head>
+    <title>ParentElement & ParentNode </title>
+    <style>
+        #Outer {
+            width: 900px;
+            height: 500px;
+            /* border: 2px solid blue; */
+            text-align: center;
+            padding: 60px;
+            background: lightsalmon;
+            margin: 50px;
+        }
+
+        #Inner {
+            width: 900px;
+            height: 300px;
+            /* border: 2px solid black; */
+            text-align: center;
+            background: rgb(107, 91, 234);
+        }
+
+        #Inner div {
+            text-align: center;
+            line-height: 90px;
+            background: rgb(251, 248, 248);
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            /* border: 2px solid red; */
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Outer">
+        <h2>Outer</h2>
+        <div id="Inner">
+            <h2 id="child-inner">Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-c">C</div>
+            <div>D</div>
+            <div id="child-E">E</div>
+        </div>
+    </div>
+    <script>
+         // Children------
+        // document.getElementById("Inner").children[0].style.background = "red";
+
+        // var a = document.getElementById("Inner").childNodes;
+
+        // console.log(a);
+
+        //first &last child------
+        // document.getElementById("Inner").lastChild.style.background = "red";
+
+        // var a = document.getElementById("child-c").lastChild;
+
+        // console.log(a);
+        // next & last sibling ------
+        // document.getElementById("chlid-c").nextElementSibling.style.background ="blue";
+
+        // var a = document.getElementById("chlid-c").nextElementSibling;
+
+        // console.log(a);
+                
+    </script>
+</body>
+</html>
